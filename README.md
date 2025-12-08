@@ -122,17 +122,10 @@ python --version
 
 ### 🖥 Save a file:
 **hello.py**
-```python
 print("Hello Sunny! Welcome to Python 🚀")
-
-
-
----
 
 ### 🎉 Done Sunny!  
 If you want, I can also make:
 📌 **Folder structure for this repository**  
 📌 **Complete Notes PDF**  
 📌 **Full Video Course Roadmap**
-
-Would you like one of these? 😊💻🔥

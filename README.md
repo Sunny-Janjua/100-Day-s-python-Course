@@ -43,12 +43,7 @@ Open **CMD/Terminal** and type:
 
 ```bash
 python --version
-# 🐍 Python Learning & Review Guide
-
-This repository provides a complete and professional roadmap for learning Python programming. It includes installation, editors, roadmap, exercises, and goals for beginners to advanced learners.
-
 ---
-
 ## 💻 3. Install a Code Editor
 
 ### 🔹 Recommended Editors

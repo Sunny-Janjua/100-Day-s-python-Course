@@ -43,106 +43,94 @@ Open **CMD/Terminal** and type:
 
 ```bash
 python --version
+# 🐍 Python Learning & Review Guide
 
-3. Install a Code Editor
+This repository provides a complete and professional roadmap for learning Python programming. It includes installation, editors, roadmap, exercises, and goals for beginners to advanced learners.
 
-🔹 Recommended Editors:
+---
 
-Editor	Download
-VS Code	https://code.visualstudio.com
+## 💻 3. Install a Code Editor
 
-PyCharm	https://www.jetbrains.com/pycharm
+### 🔹 Recommended Editors
 
-Sublime Text	https://www.sublimetext.com
-🔌 Suggested VS Code Extensions:
+| Editor | Download |
+|--------|----------|
+| VS Code | https://code.visualstudio.com |
+| PyCharm | https://www.jetbrains.com/pycharm |
+| Sublime Text | https://www.sublimetext.com |
 
-Python (by Microsoft)
+### 🔌 Suggested VS Code Extensions
 
-Jupyter
+- Python (by Microsoft)
+- Jupyter
+- Python Debugger
 
-Python Debugger
+---
 
-📚 4. Python Learning Roadmap
-🟢 Beginner Level
-Chapter	Topics
-1	Introduction to Python, Install, Running Scripts
-2	Basic Syntax, Comments, Variables
-3	Data Types (int, float, str, bool, complex)
-4	Type Casting
-5	Operators (Arithmetic, Logical, Assignment, Bitwise)
-6	Input/Output functions
-7	Strings (methods, slicing, formatting)
-🔵 Intermediate Level
-Chapter	Topics
-8	Lists (methods, slicing, comprehension)
-9	Tuples
-10	Sets
-11	Dictionaries
-12	Conditional Statements (if, elif, else)
-13	Loops (for, while, nested loops)
-14	Functions (Arguments, return, lambda)
-15	Modules & Packages
-16	File Handling (read, write, JSON)
-🟣 Advanced Level
-Chapter	Topics
-17	Object Oriented Programming (OOP)
-18	Classes & Objects
-19	Inheritance & Polymorphism
-20	Abstraction & Encapsulation
-21	Exception Handling
-22	Iterators & Generators
-23	Decorators
-24	Regular Expressions (Regex)
-🔥 Professional & Expert Topics
-Chapter	Topics
-25	Virtual Environment
-26	Pip & Package Management
-27	API Basics & JSON
-28	Web Frameworks (Flask, Django, FastAPI)
-29	MongoDB & SQL with Python
-30	Data Science Libraries (NumPy, Pandas, Matplotlib)
-31	Machine Learning Intro (Scikit-learn)
-32	Automation using Python (Selenium, OS, Sys)
-33	Python for DevOps (Docker, Kubernetes basics)
-📝 5. How to Run Python Program
-🖥 Save a file:
+## 📚 4. Python Learning Roadmap
 
-hello.py
+### 🟢 Beginner Level
 
+| Chapter | Topics |
+|--------|--------|
+| 1 | Introduction to Python, Install, Running Scripts |
+| 2 | Basic Syntax, Comments, Variables |
+| 3 | Data Types (int, float, str, bool, complex) |
+| 4 | Type Casting |
+| 5 | Operators (Arithmetic, Logical, Assignment, Bitwise) |
+| 6 | Input/Output functions |
+| 7 | Strings (methods, slicing, formatting) |
+
+### 🔵 Intermediate Level
+
+| Chapter | Topics |
+|--------|--------|
+| 8 | Lists (methods, slicing, comprehension) |
+| 9 | Tuples |
+| 10 | Sets |
+| 11 | Dictionaries |
+| 12 | Conditional Statements (if, elif, else) |
+| 13 | Loops (for, while, nested loops) |
+| 14 | Functions (Arguments, return, lambda) |
+| 15 | Modules & Packages |
+| 16 | File Handling (read, write, JSON) |
+
+### 🟣 Advanced Level
+
+| Chapter | Topics |
+|--------|--------|
+| 17 | Object Oriented Programming (OOP) |
+| 18 | Classes & Objects |
+| 19 | Inheritance & Polymorphism |
+| 20 | Abstraction & Encapsulation |
+| 21 | Exception Handling |
+| 22 | Iterators & Generators |
+| 23 | Decorators |
+| 24 | Regular Expressions (Regex) |
+
+### 🔥 Professional & Expert Topics
+
+| Chapter | Topics |
+|--------|--------|
+| 25 | Virtual Environment |
+| 26 | Pip & Package Management |
+| 27 | API Basics & JSON |
+| 28 | Web Frameworks (Flask, Django, FastAPI) |
+| 29 | MongoDB & SQL with Python |
+| 30 | Data Science Libraries (NumPy, Pandas, Matplotlib) |
+| 31 | Machine Learning Intro (Scikit-learn) |
+| 32 | Automation using Python (Selenium, OS, Sys) |
+| 33 | Python for DevOps (Docker, Kubernetes basics) |
+
+---
+
+## 📝 5. How to Run Python Program
+
+### 🖥 Save a file:
+**hello.py**
+```python
 print("Hello Sunny! Welcome to Python 🚀")
 
-▶ Run in Terminal:
-python hello.py
-
-🧪 6. Practice Exercises (Starter)
-Level	Exercise
-Easy	Print your name, find sum, average
-Intermediate	Create calculator, guessing game
-Advanced	Build CRUD program with JSON or Database
-Pro	Create REST API using FastAPI
-🎯 7. Goals of This Repository
-
-📌 After finishing this course, you will be able to:
-
-Write Python applications professionally
-
-Work with Python APIs & Databases
-
-Build Automation Tools
-
-Start AI/ML, Data Science, and Backend Development
-
-🤝 Contribute
-
-Feel free to contribute by submitting issues or pull requests.
-
-💬 Author
-
-Hussnain (Sunny Janjua)
-🧑‍💻 Full Stack & Python Developer
-📌 Code with Sunny
-
-❤️ Keep Learning, Keep Coding, Keep Growing!
 
 
 ---

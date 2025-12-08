@@ -41,7 +41,6 @@ During installation:
 #### 🧪 Step 3: Verify Installation
 Open **CMD/Terminal** and type:
 
-```bash
 python --version
 ---
 ## 💻 3. Install a Code Editor

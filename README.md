@@ -1,12 +1,9 @@
-/workspace/100-Day-s-python-Course$ /bin/bash -lc 'nl -ba README.md | sed -n '"'"'1,260p'"'"' && git status --short'
 1	# 100-Day-s-python-Course
      2	
      3	A practical Python learning repository that now includes both:
      4	
      5	- Core Python practice content (scripts + notebook)
      6	- A complete DevOps learning track with ready-to-run starter code
-     7	
-     8	---
      9	
     10	## Repository Overview
     11	
@@ -21,13 +18,8 @@
     20	
     21	3. **DevOps implementation starter**
     22	   - `devops-starter/` with separated folders for Python app, Bash scripts, CI/CD, Docker, Kubernetes, and AWS Terraform.
-    23	
-    24	---
-    25	
+
     26	## Project Structure
-    27	
-    28	```text
-    29	.
     30	├── README.md
     31	├── DEVOPS_COMPLETE_GUIDE.md
     32	├── day01.py/
@@ -70,9 +62,6 @@
     69	        ├── main.tf
     70	        ├── outputs.tf
     71	        └── README.md
-    72	```
-    73	
-    74	---
     75	
     76	## Python Learning Section
     77	
@@ -89,9 +78,6 @@
     88	```bash
     89	jupyter notebook exercise-functions.ipynb
     90	```
-    91	
-    92	---
-    93	
     94	## DevOps Learning Section
     95	
     96	### 1) Read Complete Theory Guide
@@ -127,8 +113,6 @@
    126	- [`devops-starter/README.md`](devops-starter/README.md)
    127	
    128	for run/build/deploy instructions.
-   129	
-   130	---
    131	
    132	## Quick Start (DevOps Starter)
    133	
@@ -185,8 +169,6 @@
    184	```
    185	
    186	> Create a real secret based on `secret.example.yaml` before production usage.
-   187	
-   188	---
    189	
    190	## CI/CD Included
    191	
@@ -195,8 +177,6 @@
    194	
    195	Both include test/build pipeline stages and deployment placeholders for your target infrastructure.
    196	
-   197	---
-   198	
    199	## AWS IaC Included
    200	
    201	Terraform baseline is available under:
@@ -204,8 +184,6 @@
    203	- `devops-starter/aws/terraform/`
    204	
    205	Current baseline resources include ECR repository and CloudWatch log group, and can be extended to full VPC/EKS architecture.
-   206	
-   207	---
    208	
    209	## Recommended Learning Path
    210	
@@ -217,11 +195,8 @@
    216	6. Apply Kubernetes manifests in a local cluster (kind/minikube).
    217	7. Extend Terraform for your AWS deployment.
    218	8. Connect CI pipeline to your repository and environment.
-   219	
-   220	---
-   221	
-   222	## Notes
    223	
    224	- If package installation fails in restricted environments, retry in a network-enabled setup.
    225	- Keep secrets out of git; use secret managers or CI/CD protected variables.
    226	- Prefer small commits with clear messages while extending this repo.
+

@@ -80,6 +80,8 @@ This repository contains:
 
 ```
 
+---
+```
 # DevOps Starter Project (Complete, Separated Folders)
 
 This folder contains a practical end-to-end DevOps starter implementation with separated code for:
@@ -162,6 +164,7 @@ devops-starter/
    kubectl apply -f service.yaml
    kubectl apply -f hpa.yaml
    ```
+
 
 
 

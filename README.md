@@ -129,3 +129,13 @@ If you want, I can also make:
 📌 **Folder structure for this repository**  
 📌 **Complete Notes PDF**  
 📌 **Full Video Course Roadmap**
+
+---
+
+## 🛠 DevOps Learning Track (New)
+
+A complete step-by-step DevOps guide has been added to this repository:
+
+- **[DEVOPS_COMPLETE_GUIDE.md](DEVOPS_COMPLETE_GUIDE.md)**
+
+It covers Python automation, Bash scripting, GitLab, Jenkins, CI/CD pipelines, Docker, Kubernetes, and AWS in one practical roadmap.

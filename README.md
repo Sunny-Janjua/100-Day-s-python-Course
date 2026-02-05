@@ -78,6 +78,7 @@ This repository contains:
         ├── outputs.tf
         └── README.md
 
+```
 
 # DevOps Starter Project (Complete, Separated Folders)
 
@@ -161,6 +162,7 @@ devops-starter/
    kubectl apply -f service.yaml
    kubectl apply -f hpa.yaml
    ```
+
 
 
 

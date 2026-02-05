@@ -79,143 +79,88 @@ This repository contains:
         └── README.md
 
 
-🐍 Python Learning Section
-Run Day 1 Python Script
-python day01.py/main.py
-Open Notebook Exercises
-Make sure Jupyter is installed:
+# DevOps Starter Project (Complete, Separated Folders)
 
-jupyter notebook exercise-functions.ipynb
-⚙️ DevOps Learning Section
-Read the Complete Theory Guide
-Start with:
+This folder contains a practical end-to-end DevOps starter implementation with separated code for:
 
-DEVOPS_COMPLETE_GUIDE.md
+- Python application + tests
+- Bash automation scripts
+- GitLab CI and Jenkins pipeline definitions
+- Docker and Docker Compose
+- Kubernetes manifests
+- AWS Terraform (ECR/EKS-ready baseline)
 
-It follows this learning sequence:
+## Folder Structure
 
-Python for DevOps
+```text
+devops-starter/
+├── python-app/
+│   ├── app.py
+│   ├── health_check.py
+│   ├── requirements.txt
+│   └── tests/test_app.py
+├── python-practice/
+│   ├── questions.md
+│   └── solutions.py
+├── scripts/
+│   ├── backup.sh
+│   ├── cleanup.sh
+│   └── deploy_local.sh
+├── ci/
+│   ├── gitlab/.gitlab-ci.yml
+│   └── jenkins/Jenkinsfile
+├── docker/
+│   ├── Dockerfile
+│   ├── docker-compose.yml
+│   └── .dockerignore
+├── kubernetes/
+│   ├── namespace.yaml
+│   ├── configmap.yaml
+│   ├── secret.example.yaml
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   ├── ingress.yaml
+│   └── hpa.yaml
+└── aws/terraform/
+    ├── providers.tf
+    ├── variables.tf
+    ├── main.tf
+    ├── outputs.tf
+    └── README.md
+```
 
-Bash Scripting
+## Quick Start
 
-GitLab & Jenkins
+1. Run the Python app:
+   ```bash
+   cd devops-starter/python-app
+   python -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   python app.py
+   ```
 
-CI/CD Pipelines
+2. Run tests:
+   ```bash
+   pytest -q
+   ```
 
-Docker
+3. Build Docker image:
+   ```bash
+   cd ..
+   docker build -f docker/Dockerfile -t devops-starter:local .
+   docker run -p 8000:8000 devops-starter:local
+   ```
 
-Kubernetes
+4. Apply Kubernetes manifests:
+   ```bash
+   cd ../kubernetes
+   kubectl apply -f namespace.yaml
+   kubectl apply -f configmap.yaml
+   kubectl apply -f deployment.yaml
+   kubectl apply -f service.yaml
+   kubectl apply -f hpa.yaml
+   ```
 
-AWS Basics
-
-Use the DevOps Implementation Starter
-Navigate to:
-
-cd devops-starter
-Then read:
-
-devops-starter/README.md
-
-for detailed run, build, and deploy instructions.
-
-🚀 Quick Start (DevOps Starter)
-Run the Python App Locally
-cd devops-starter/python-app
-python -m venv .venv
-source .venv/bin/activate   # Linux/Mac
-
-# .venv\Scripts\activate   # Windows
-pip install -r requirements.txt
-python app.py
-Health check endpoint:
-
-http://localhost:8000/health
-
-Run Health Check Script
-python health_check.py --url http://localhost:8000/health
-Run Tests
-pytest -q
-Build & Run with Docker
-cd ..
-docker build -f docker/Dockerfile -t devops-starter:local .
-docker run -p 8000:8000 devops-starter:local
-Run with Docker Compose
-cd docker
-docker compose up --build
-Apply Kubernetes Manifests
-cd ../kubernetes
-kubectl apply -f namespace.yaml
-kubectl apply -f configmap.yaml
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-kubectl apply -f hpa.yaml
-⚠️ Important:
-Create a real secret based on secret.example.yaml before production use.
-
-🔁 CI/CD Included
-GitLab CI: devops-starter/ci/gitlab/.gitlab-ci.yml
-
-Jenkins Pipeline: devops-starter/ci/jenkins/Jenkinsfile
-
-Both pipelines include:
-
-Test stage
-
-Build stage
-
-Deployment placeholders (customize for your infrastructure)
-
-☁️ AWS Infrastructure as Code
-Terraform configuration is available at:
-
-devops-starter/aws/terraform/
-
-Current baseline includes:
-
-ECR repository
-
-CloudWatch log group
-
-You can extend this to:
-
-VPC
-
-EKS
-
-Load Balancers
-
-IAM roles
-
-🧭 Recommended Learning Path
-Run Python scripts and notebook exercises
-
-Read DEVOPS_COMPLETE_GUIDE.md completely
-
-Run the Python app locally
-
-Explore and edit Bash scripts
-
-Build and run Docker images
-
-Deploy to Kubernetes (minikube / kind)
-
-Extend Terraform for AWS
-
-Connect CI/CD pipelines to your repo
-
-📝 Notes & Best Practices
-Retry package installation in a network-enabled environment if needed
-
-Never commit secrets to Git
-
-Use CI/CD protected variables or secret managers
-
-Make small, meaningful commits with clear messages
-
-Happy Learning & Building!
-- ✅ Professional open-source description  
-- ✅ Course-style roadmap (Day 1 → Day 100)
-
-Just tell me 👌
 
 

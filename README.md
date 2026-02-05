@@ -7,6 +7,8 @@ A practical Python learning repository that includes:
 
 This repository is designed for learners who want to **master Python fundamentals** and then **apply them in real-world DevOps workflows**.
 
+---
+
 ## 📌 Repository Overview
 
 This repository contains:
@@ -27,7 +29,12 @@ This repository contains:
   - Kubernetes manifests
   - AWS Infrastructure as Code (Terraform)
 
+---
+
 ## 📂 Project Structure
+
+```text
+.
 ├── README.md
 ├── DEVOPS_COMPLETE_GUIDE.md
 ├── day01.py/
@@ -70,6 +77,7 @@ This repository contains:
         ├── main.tf
         ├── outputs.tf
         └── README.md
+
 
 🐍 Python Learning Section
 Run Day 1 Python Script
@@ -209,4 +217,5 @@ Happy Learning & Building!
 - ✅ Course-style roadmap (Day 1 → Day 100)
 
 Just tell me 👌
+
 

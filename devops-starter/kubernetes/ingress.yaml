@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: devops-starter-ingress
+  namespace: devops-starter
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  rules:
+    - host: devops-starter.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: devops-starter-service
+                port:
+                  number: 80

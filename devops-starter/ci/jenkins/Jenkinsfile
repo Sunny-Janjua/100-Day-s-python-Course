@@ -1,0 +1,48 @@
+pipeline {
+    agent any
+
+    environment {
+        IMAGE_NAME = "devops-starter:${env.BUILD_NUMBER}"
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                checkout scm
+            }
+        }
+
+        stage('Test') {
+            steps {
+                sh '''
+                cd devops-starter/python-app
+                python -m venv .venv
+                . .venv/bin/activate
+                pip install -r requirements.txt
+                pytest -q
+                '''
+            }
+        }
+
+        stage('Build Image') {
+            steps {
+                sh '''
+                cd devops-starter
+                docker build -f docker/Dockerfile -t ${IMAGE_NAME} .
+                '''
+            }
+        }
+
+        stage('Deploy (Example)') {
+            steps {
+                sh 'echo "Add kubectl/helm deployment commands here"'
+            }
+        }
+    }
+
+    post {
+        always {
+            echo 'Pipeline finished.'
+        }
+    }
+}

@@ -1,4 +1,3 @@
-Markdown
 # 100-Days-of-Python Course 🐍🚀
 
 Welcome to the **100-Days-of-Python** repository! This is a comprehensive, practical journey designed to help you master Python fundamentals and seamlessly transition into real-world **DevOps workflows**.
@@ -11,15 +10,18 @@ This repository is divided into three core pillars:
 2.  **DevOps Theory**: A complete guide covering the "Why" and "How" of modern infrastructure.
 3.  **DevOps Implementation**: A production-ready starter project featuring CI/CD, Containerization, and Infrastructure as Code (IaC).
 
+---
 
 ## 🛠️ Tech Stack
-**Language:** Python 3.x, Bash
-**Containerization:** Docker, Docker Compose
-**Orchestration:** Kubernetes (K8s)
-**CI/CD:** GitLab CI, Jenkins
-**Cloud & IaC:** AWS, Terraform
-**Testing:** Pytest
 
+* **Language:** Python 3.x, Bash
+* **Containerization:** Docker, Docker Compose
+* **Orchestration:** Kubernetes (K8s)
+* **CI/CD:** GitLab CI, Jenkins
+* **Cloud & IaC:** AWS, Terraform
+* **Testing:** Pytest
+
+---
 
 ## 📂 Project Structure
 
@@ -39,6 +41,11 @@ This repository is divided into three core pillars:
     ├── kubernetes/             # K8s Manifests (Deployment, Service, HPA)
     └── aws/terraform/          # Infrastructure as Code for AWS
 
+
+```
+
+Quick Start (DevOps Starter)
+Follow these steps to get the sample application and infrastructure up and running.
 
 1. Run the Python App Locally
 Bash
@@ -87,4 +94,7 @@ Founder: Hussnain Mulazam (Sunny Janjua)
 * **Roadmap**: Included a brief timeline to explain the "100 Days" concept.
 
 Would you like me to help you write the content for the `DEVOPS_COMPLETE_GUIDE.md` file next?
+
+
+
 

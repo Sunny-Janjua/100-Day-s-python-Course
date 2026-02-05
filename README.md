@@ -1,141 +1,148 @@
-# 🐍 Python Complete Review & Learning Guide
+🖥️ PYTHON os MODULE – ALL OPERATIONS (ONE SLIDE)
+📁 Directory Operations
 
-This repository is a complete Python learning and revision guide designed for beginners, intermediate developers, and anyone who wants to revise Python professionally.  
-It includes:  
-✔ Installation Guide  
-✔ Complete Topics with Explanations  
-✔ Exercises & Practice Programs  
-✔ Notes & Tutorials
+os.getcwd() → current directory
 
----
+os.chdir(path) → change directory
 
-## 🚀 1. Introduction
+os.mkdir(name) → create single folder
 
-**Python** is a powerful, high-level, multipurpose programming language widely used in:
+os.makedirs(path) → create nested folders
 
-- Web development (Django, Flask, FastAPI)
-- Artificial Intelligence / Machine Learning
-- Data Science
-- Automation & Scripting
-- Game Development
-- APIs and Backend Development
+os.rmdir(name) → delete empty folder
 
-Python is easy to learn and has a huge community, making it the best first language.
+os.listdir(path) → list files/folders
 
----
+📄 File Operations
 
-## 💻 2. Installation & Setup Instructions
+os.remove(file) → delete file
 
-### 🔹 Install Python (Windows, macOS, Linux)
+os.rename(old, new) → rename file/folder
 
-#### 📥 Step 1: Download Python
-- Visit: https://www.python.org/downloads/
-- Choose the latest stable version (Recommended: Python 3.x)
-- Download & Run
+os.stat(file) → file info (size, time)
 
-#### ⚙ Step 2: Important Setup (Windows)
-During installation:
-☑ Check **“Add Python to PATH”**
-☑ Then click **Install Now**
+🧭 Path Operations (os.path)
 
-#### 🧪 Step 3: Verify Installation
-Open **CMD/Terminal** and type:
+os.path.exists(path) → check exist
 
-python --version
----
-## 💻 3. Install a Code Editor
+os.path.isfile(path) → is file?
 
-### 🔹 Recommended Editors
+os.path.isdir(path) → is folder?
 
-| Editor | Download |
-|--------|----------|
-| VS Code | https://code.visualstudio.com |
-| PyCharm | https://www.jetbrains.com/pycharm |
-| Sublime Text | https://www.sublimetext.com |
+os.path.join(a, b) → join path
 
-### 🔌 Suggested VS Code Extensions
+os.path.abspath(path) → absolute path
 
-- Python (by Microsoft)
-- Jupyter
-- Python Debugger
+os.path.basename(path) → file name
 
----
+os.path.dirname(path) → folder path
 
-## 📚 4. Python Learning Roadmap
+os.path.split(path) → split path
 
-### 🟢 Beginner Level
+os.path.getsize(path) → file size
 
-| Chapter | Topics |
-|--------|--------|
-| 1 | Introduction to Python, Install, Running Scripts |
-| 2 | Basic Syntax, Comments, Variables |
-| 3 | Data Types (int, float, str, bool, complex) |
-| 4 | Type Casting |
-| 5 | Operators (Arithmetic, Logical, Assignment, Bitwise) |
-| 6 | Input/Output functions |
-| 7 | Strings (methods, slicing, formatting) |
+🌍 Environment Variables
 
-### 🔵 Intermediate Level
+os.environ → all variables
 
-| Chapter | Topics |
-|--------|--------|
-| 8 | Lists (methods, slicing, comprehension) |
-| 9 | Tuples |
-| 10 | Sets |
-| 11 | Dictionaries |
-| 12 | Conditional Statements (if, elif, else) |
-| 13 | Loops (for, while, nested loops) |
-| 14 | Functions (Arguments, return, lambda) |
-| 15 | Modules & Packages |
-| 16 | File Handling (read, write, JSON) |
+os.environ.get("PATH") → get variable
 
-### 🟣 Advanced Level
+os.environ["KEY"] = "value" → set variable
 
-| Chapter | Topics |
-|--------|--------|
-| 17 | Object Oriented Programming (OOP) |
-| 18 | Classes & Objects |
-| 19 | Inheritance & Polymorphism |
-| 20 | Abstraction & Encapsulation |
-| 21 | Exception Handling |
-| 22 | Iterators & Generators |
-| 23 | Decorators |
-| 24 | Regular Expressions (Regex) |
+🖥️ System / OS Info
 
-### 🔥 Professional & Expert Topics
+os.name → OS type
 
-| Chapter | Topics |
-|--------|--------|
-| 25 | Virtual Environment |
-| 26 | Pip & Package Management |
-| 27 | API Basics & JSON |
-| 28 | Web Frameworks (Flask, Django, FastAPI) |
-| 29 | MongoDB & SQL with Python |
-| 30 | Data Science Libraries (NumPy, Pandas, Matplotlib) |
-| 31 | Machine Learning Intro (Scikit-learn) |
-| 32 | Automation using Python (Selenium, OS, Sys) |
-| 33 | Python for DevOps (Docker, Kubernetes basics) |
+os.getlogin() → current user
 
----
+os.cpu_count() → CPU cores
 
-## 📝 5. How to Run Python Program
+os.getpid() → process ID
 
-### 🖥 Save a file:
-**hello.py**
-print("Hello Sunny! Welcome to Python 🚀")
+⚙️ OS Commands
 
-### 🎉 Done Sunny!  
-If you want, I can also make:
-📌 **Folder structure for this repository**  
-📌 **Complete Notes PDF**  
-📌 **Full Video Course Roadmap**
+os.system("command") → run command
+(dir, ls, etc.)
 
----
+🛡️ Permissions & Access
 
-## 🛠 DevOps Learning Track (New)
+os.access(path, os.R_OK) → read access
 
-A complete step-by-step DevOps guide has been added to this repository:
+os.access(path, os.W_OK) → write access
 
-- **[DEVOPS_COMPLETE_GUIDE.md](DEVOPS_COMPLETE_GUIDE.md)**
+os.chmod(path, mode) → change permission
 
-It covers Python automation, Bash scripting, GitLab, Jenkins, CI/CD pipelines, Docker, Kubernetes, and AWS in one practical roadmap.
+🔁 Process & Exit
+
+os._exit(0) → force exit program
+
+
+
+
+
+
+
+
+
+
+
+
+
+📁 PYTHON FILE HANDLING – ALL METHODS (ONE SLIDE)
+🔑 Open / Close
+
+open(file, mode) → open file
+
+file.close() → close file
+
+📖 Read Methods
+
+file.read() → read complete file
+
+file.readline() → read one line
+
+file.readlines() → read all lines (list)
+
+✍️ Write Methods
+
+file.write(text) → write text
+
+file.writelines(list) → write multiple lines
+
+🔄 File Modes
+
+"r" → read
+
+"w" → write (overwrite)
+
+"a" → append
+
+"x" → create new
+
+"rb" → read binary
+
+"wb" → write binary
+
+🛡️ Best Practice
+
+with open(...) as file: → auto close
+
+🧭 File Pointer
+
+file.tell() → current position
+
+file.seek(pos) → move pointer
+
+🧪 Extra Utilities
+
+file.flush() → clear buffer
+
+file.readable() → can read?
+
+file.writable() → can write?
+
+file.seekable() → can seek?
+
+❌ File Delete (via os)
+
+os.remove(file) → delete file

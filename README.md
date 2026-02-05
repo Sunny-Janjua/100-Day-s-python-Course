@@ -7,8 +7,6 @@ A practical Python learning repository that includes:
 
 This repository is designed for learners who want to **master Python fundamentals** and then **apply them in real-world DevOps workflows**.
 
----
-
 ## 📌 Repository Overview
 
 This repository contains:
@@ -29,12 +27,7 @@ This repository contains:
   - Kubernetes manifests
   - AWS Infrastructure as Code (Terraform)
 
----
-
 ## 📂 Project Structure
-
-```text
-.
 ├── README.md
 ├── DEVOPS_COMPLETE_GUIDE.md
 ├── day01.py/
@@ -77,6 +70,7 @@ This repository contains:
         ├── main.tf
         ├── outputs.tf
         └── README.md
+
 🐍 Python Learning Section
 Run Day 1 Python Script
 python day01.py/main.py
@@ -85,7 +79,7 @@ Make sure Jupyter is installed:
 
 jupyter notebook exercise-functions.ipynb
 ⚙️ DevOps Learning Section
-1️⃣ Read the Complete Theory Guide
+Read the Complete Theory Guide
 Start with:
 
 DEVOPS_COMPLETE_GUIDE.md
@@ -106,7 +100,7 @@ Kubernetes
 
 AWS Basics
 
-2️⃣ Use the DevOps Implementation Starter
+Use the DevOps Implementation Starter
 Navigate to:
 
 cd devops-starter
@@ -121,6 +115,7 @@ Run the Python App Locally
 cd devops-starter/python-app
 python -m venv .venv
 source .venv/bin/activate   # Linux/Mac
+
 # .venv\Scripts\activate   # Windows
 pip install -r requirements.txt
 python app.py
@@ -209,15 +204,9 @@ Use CI/CD protected variables or secret managers
 
 Make small, meaningful commits with clear messages
 
-Happy Learning & Building! 🎯
-
-
----
-
-If you want next:
-- ✅ `devops-starter/README.md` rewritten  
-- ✅ Badges (GitHub Actions, Docker, Python)  
+Happy Learning & Building!
 - ✅ Professional open-source description  
 - ✅ Course-style roadmap (Day 1 → Day 100)
 
 Just tell me 👌
+

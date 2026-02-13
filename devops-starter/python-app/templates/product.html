@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<article>
+  <div class="carousel">
+    <div class="slide">Image 1 - {{ product.name }}</div>
+    <div class="slide">Image 2 - {{ product.model }}</div>
+    <div class="slide">Image 3 - Color preview</div>
+  </div>
+  <h1>{{ product.name }}</h1>
+  <p>Model: {{ product.model }}</p>
+  <p>${{ '%.2f'|format(product.price) }}</p>
+  <p>Colors: {{ product.colors|join(', ') }}</p>
+  <button>Add to cart</button>
+
+  <h2>Description</h2>
+  <p>{{ product.description }}</p>
+
+  <h2>Features & Specs</h2>
+  <ul>{% for f in product.features %}<li>{{ f }}</li>{% endfor %}</ul>
+
+  <h2>Reviews</h2>
+  <p>⭐ {{ product.rating }} average rating</p>
+
+  <h2>Shipping info</h2>
+  <p>{{ product.shipping }}</p>
+</article>
+
+<section>
+  <h2>Related products</h2>
+  <div class="cards">
+    {% for p in related %}<article class="card"><h3>{{ p.name }}</h3><a href="{{ url_for('product_detail', product_id=p.id) }}">View</a></article>{% endfor %}
+  </div>
+</section>
+{% endblock %}

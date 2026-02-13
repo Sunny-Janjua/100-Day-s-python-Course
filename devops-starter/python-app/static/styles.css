@@ -1,0 +1,23 @@
+body { font-family: Arial, sans-serif; margin: 0; color: #222; background: #f8f9fb; }
+.site-header { position: sticky; top: 0; background: #111827; color: #fff; display: grid; grid-template-columns: 160px 1fr 2fr auto; gap: 1rem; align-items: center; padding: 1rem; }
+.logo, header a { color: #fff; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: .5rem; max-height: 64px; overflow: auto; }
+.search-bar { display: flex; gap: .4rem; }
+.search-bar input { padding: .4rem; width: 100%; }
+main { padding: 1.5rem; max-width: 1100px; margin: auto; }
+.hero { background: linear-gradient(130deg, #1d4ed8, #0ea5e9); color: #fff; padding: 2rem; border-radius: 12px; }
+.btn, button { background: #1d4ed8; color: #fff; border: 0; border-radius: 6px; padding: .5rem .8rem; text-decoration: none; cursor: pointer; display: inline-block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: .75rem; }
+.grid a { background: #fff; border-radius: 8px; padding: 1rem; text-decoration: none; border: 1px solid #e5e7eb; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.card { background: #fff; padding: 1rem; border: 1px solid #e5e7eb; border-radius: 8px; }
+.carousel { display: flex; gap: .75rem; overflow: auto; padding-bottom: .4rem; }
+.slide { background: #fff; border: 1px dashed #94a3b8; border-radius: 8px; padding: .9rem; min-width: 220px; }
+.filters { background: #fff; padding: 1rem; border-radius: 8px; display: flex; gap: .7rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.stack { display: grid; gap: .6rem; max-width: 600px; }
+input, select, textarea { padding: .5rem; border: 1px solid #cbd5e1; border-radius: 6px; }
+footer { display: flex; gap: .8rem; flex-wrap: wrap; justify-content: center; padding: 1rem; background: #0f172a; }
+footer a { color: #dbeafe; text-decoration: none; }
+.success { color: #166534; font-weight: 700; }
+table { width: 100%; border-collapse: collapse; background: #fff; }
+td, th { border: 1px solid #e2e8f0; padding: .6rem; }

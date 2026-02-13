@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Cart / Basket</h1>
+<table>
+  <tr><th>Product</th><th>Qty</th><th>Price</th></tr>
+  {% for item in cart_items %}
+  <tr><td>{{ item.name }}</td><td><input type="number" value="1" min="1" /></td><td>${{ '%.2f'|format(item.price) }}</td></tr>
+  {% endfor %}
+</table>
+<p><strong>Subtotal:</strong> ${{ '%.2f'|format(subtotal) }}</p>
+<label>Discount / Coupon <input type="text" placeholder="Enter code" /></label>
+<p><a class="btn" href="{{ url_for('checkout') }}">Checkout</a></p>
+{% endblock %}

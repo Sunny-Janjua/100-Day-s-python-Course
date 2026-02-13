@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Discover / Explore</h1>
+<p>Browse all featured product types: hubs, chargers, cables, stands, storage, and desk accessories.</p>
+<div class="cards">
+{% for p in products %}
+  <article class="card"><h3>{{ p.name }}</h3><p>{{ p.category }}</p><a href="{{ url_for('product_detail', product_id=p.id) }}">Explore</a></article>
+{% endfor %}
+</div>
+{% endblock %}

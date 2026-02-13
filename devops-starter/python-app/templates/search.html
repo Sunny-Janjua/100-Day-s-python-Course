@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Search results{% if query %} for "{{ query }}"{% endif %}</h1>
+<div class="cards">
+  {% for p in results %}
+  <article class="card"><h3>{{ p.name }}</h3><p>{{ p.category }}</p><a href="{{ url_for('product_detail', product_id=p.id) }}">View</a></article>
+  {% else %}
+  <p>No matching products found.</p>
+  {% endfor %}
+</div>
+{% endblock %}

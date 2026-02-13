@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="hero">
+  <h1>Modern tech accessories for work and travel</h1>
+  <p>Shop CES 2026 highlights, best sellers, and new releases.</p>
+  <a class="btn" href="{{ url_for('shop') }}">Shop now</a>
+</section>
+
+<section>
+  <h2>Top Categories</h2>
+  <div class="grid">
+    <a href="{{ url_for('shop') }}?category=Power & Charging">Power & Charging</a>
+    <a href="{{ url_for('shop') }}?category=Connectivity & Expansion">Connectivity & Expansion</a>
+    <a href="{{ url_for('shop') }}?category=Keyboards">Keyboards</a>
+    <a href="{{ url_for('shop') }}?category=Mice">Mice</a>
+  </div>
+</section>
+
+<section>
+  <h2>Featured New Arrivals</h2>
+  <div class="cards">
+    {% for p in new_arrivals %}
+    <article class="card"><h3>{{ p.name }}</h3><p>${{ '%.2f'|format(p.price) }}</p><a href="{{ url_for('product_detail', product_id=p.id) }}">View</a></article>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>Best Sellers</h2>
+  <div class="cards">
+    {% for p in best_sellers %}
+    <article class="card"><h3>{{ p.name }}</h3><p>⭐ {{ p.rating }}</p><a href="{{ url_for('product_detail', product_id=p.id) }}">View</a></article>
+    {% endfor %}
+  </div>
+</section>
+
+<section>
+  <h2>Latest Products Carousel</h2>
+  <div class="carousel">
+    {% for p in featured %}
+    <div class="slide">{{ p.name }} · ${{ '%.2f'|format(p.price) }}</div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

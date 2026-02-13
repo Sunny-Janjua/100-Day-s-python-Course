@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Shop {{ selected_category }}</h1>
+<form class="filters" method="get" action="{{ url_for('shop') }}">
+  <label>Category
+    <select name="category">
+      <option>All</option>
+      {% for c in menu_categories %}<option {% if selected_category==c %}selected{% endif %}>{{ c }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>Brand
+    <select name="brand"><option value="">All</option>{% for b in brands %}<option>{{ b }}</option>{% endfor %}</select>
+  </label>
+  <label>Wireless / Wired
+    <select name="connection"><option value="">Any</option><option>Wireless</option><option>Wired</option></select>
+  </label>
+  <label>Type
+    <select name="type"><option value="">Any</option><option>Gaming</option><option>Office</option><option>Portable</option></select>
+  </label>
+  <label>Sort
+    <select name="sort"><option value="">Featured</option><option value="best">Best Sellers</option><option value="price_asc">Price Low to High</option><option value="price_desc">Price High to Low</option></select>
+  </label>
+  <button type="submit">Apply</button>
+</form>
+<div class="cards">
+  {% for p in products %}
+  <article class="card">
+    <h3>{{ p.name }}</h3>
+    <p>{{ p.category }}</p>
+    <p>${{ '%.2f'|format(p.price) }}</p>
+    <a class="btn" href="{{ url_for('product_detail', product_id=p.id) }}">Open Product</a>
+  </article>
+  {% else %}
+  <p>No products found.</p>
+  {% endfor %}
+</div>
+{% endblock %}

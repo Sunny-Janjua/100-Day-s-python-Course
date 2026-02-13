@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ title or 'Tech Store' }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="{{ url_for('index') }}">TechVerse</a>
+    <form action="{{ url_for('search') }}" method="get" class="search-bar">
+      <input type="search" name="q" placeholder="Search products..." />
+      <button type="submit">Search</button>
+    </form>
+    <nav>
+      {% for item in menu_categories %}
+      <a href="{{ url_for('shop') }}?category={{ item }}">{{ item }}</a>
+      {% endfor %}
+      <a href="{{ url_for('discover') }}">Discover</a>
+    </nav>
+    <div class="actions">
+      <a href="{{ url_for('about') }}">Account / Login</a>
+      <a href="{{ url_for('cart') }}">🛒 Cart ({{ cart_count }})</a>
+    </div>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('support') }}">Support</a>
+    <a href="{{ url_for('rewards') }}">Rewards</a>
+    <a href="{{ url_for('accessibility') }}">Accessibility</a>
+    <a href="{{ url_for('privacy') }}">Privacy</a>
+    <a href="{{ url_for('terms') }}">Terms</a>
+    <a href="{{ url_for('shipping_returns') }}">Shipping & Returns</a>
+  </footer>
+</body>
+</html>

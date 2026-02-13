@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Checkout</h1>
+{% if message %}<p class="success">{{ message }}</p>{% endif %}
+<form method="post" class="stack">
+  <h3>Shipping address</h3>
+  <input required placeholder="Full name" name="name" />
+  <input required placeholder="Address" name="address" />
+  <input required placeholder="City" name="city" />
+
+  <h3>Contact info</h3>
+  <input required placeholder="Email" type="email" name="email" />
+  <input placeholder="Phone" name="phone" />
+
+  <h3>Payment method</h3>
+  <label><input type="radio" name="payment" checked /> Cash on Delivery</label>
+  <label><input type="radio" name="payment" /> Card / Online</label>
+
+  <h3>Order summary</h3>
+  <p>2 items · Estimated total $208.99</p>
+  <button type="submit">Confirm Order</button>
+</form>
+{% endblock %}
